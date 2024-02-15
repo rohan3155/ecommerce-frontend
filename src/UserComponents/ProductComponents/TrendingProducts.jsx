@@ -15,7 +15,7 @@ const TrendingProducts = (props) => {
     //     // Replace 'your_encrypted_file_name' with the actual encrypted file name
     //     // const encryptedFileName = 'bdcb467f022461af7193b564c318ce64';
     //     const productId = '64e2f3490acf179288d7acc2';
-    //     axios.get(`http://localhost:3155/Admin/viewimage/${id.id}`, {
+    //     axios.get(`https://ecommerce-backend-556q.onrender.com/Admin/viewimage/${id.id}`, {
     //         responseType: 'arraybuffer',
     //     })
     //         .then((response) => {
@@ -37,7 +37,7 @@ const TrendingProducts = (props) => {
         const fetchData = async () => {
             setLoading(true);
             try {
-                const response = await axios.post('http://localhost:3155/Admin/viewProduct')
+                const response = await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/viewProduct')
                 setUData(response.data);
                 console.log(response.data)
                 response.data.map((item)=>{

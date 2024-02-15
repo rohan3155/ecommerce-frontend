@@ -24,7 +24,7 @@ export default function Login() {
 
 
         try {
-            await axios.post('http://localhost:3155/Admin/Login', {
+            await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/Login', {
                 phone, password
             }).then(res => {
 

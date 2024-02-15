@@ -11,7 +11,7 @@ const Cards = (props) => {
         const handleCart = async () => {
 
             try {
-                const  response = await axios.post('http://localhost:3155/User/addtocart',UserId,productId,quantity) 
+                const  response = await axios.post('https://ecommerce-backend-556q.onrender.com/User/addtocart',UserId,productId,quantity) 
                 // console.log(response.data)
                
             } catch (error) {x``
@@ -26,7 +26,7 @@ const Cards = (props) => {
                // Replace 'your_encrypted_file_name' with the actual encrypted file name
                // const encryptedFileName = 'bdcb467f022461af7193b564c318ce64';
                // const productId = '64e2f3490acf179288d7acc2';
-               axios.get(`http://localhost:3155/Admin/viewimage/${props.id}`, {
+               axios.get(`https://ecommerce-backend-556q.onrender.com/Admin/viewimage/${props.id}`, {
                    responseType: 'arraybuffer',
                })
                    .then((response) => {

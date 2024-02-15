@@ -21,7 +21,7 @@ const EditUser = () => {
     const fetchData = async () => {
         setLoading(true);
         try {
-            const  response = await axios.post('http://localhost:3155/Admin/viewUser',body)
+            const  response = await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/viewUser',body)
             setUData(response.data);
             console.log(response.data)
             
@@ -63,7 +63,7 @@ const body = {
 }
 
       try {
-          await axios.post('http://localhost:3155/Admin/updateUser', body).then(res => {
+          await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/updateUser', body).then(res => {
 
               if (res.data === " ") {
 

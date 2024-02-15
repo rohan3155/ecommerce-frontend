@@ -23,7 +23,7 @@ function ImageUploadForm() {
     formData.append('ProductId', productId);
 
     try {
-      const response = await axios.post('http://localhost:3155/Admin/addimage', formData, {
+      const response = await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/addimage', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

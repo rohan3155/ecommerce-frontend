@@ -21,7 +21,7 @@ const [UData, setUData] = useState([])
 //     const fetchData = async () => {
 //         setLoading(true);
 //         try {
-//             const response = await axios.post('http://localhost:3155/Admin/viewSubCategory')
+//             const response = await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/viewSubCategory')
 //             setSCData(response.data);
 //             console.log(response.data)
 
@@ -48,7 +48,7 @@ const [UData, setUData] = useState([])
     const fetchData = async () => {
         setLoading(true);
         try {
-            const  response = await axios.post('http://localhost:3155/Admin/viewCategory',body)
+            const  response = await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/viewCategory',body)
             setUData(response.data);
             console.log(response.data)
             
@@ -87,7 +87,7 @@ const body = {
 }
 
       try {
-          await axios.post('http://localhost:3155/Admin/updateCategory', body).then(res => {
+          await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/updateCategory', body).then(res => {
 
               if (res.data === " ") {
 

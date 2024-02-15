@@ -25,7 +25,7 @@ const AddUser = () => {
 
 
       try {
-          await axios.post('http://localhost:3155/Admin/addUser', {
+          await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/addUser', {
               firstname, lastname, phone, email, password,
           }).then(res => {
 

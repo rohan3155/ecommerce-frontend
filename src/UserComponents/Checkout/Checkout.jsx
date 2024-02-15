@@ -15,7 +15,7 @@ const Checkout = () => {
       setLoading(true);
       try {
         const response = await axios.post(
-          "http://localhost:3155/Admin/viewProduct",
+          "https://ecommerce-backend-556q.onrender.com/Admin/viewProduct",
           body
         );
         setUData(response.data);
@@ -40,7 +40,7 @@ const Checkout = () => {
     }
 try {
    
-   const  response = await axios.post('http://localhost:3155/User/addtocart',body)
+   const  response = await axios.post('https://ecommerce-backend-556q.onrender.com/User/addtocart',body)
    
    console.log(response.data)
    

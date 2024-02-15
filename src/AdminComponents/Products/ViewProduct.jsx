@@ -10,7 +10,7 @@ const ViewProduct = () => {
       setLoading(true);
       try {
         const response = await axios.post(
-          "http://localhost:3155/Admin/viewProduct"
+          "https://ecommerce-backend-556q.onrender.com/Admin/viewProduct"
         );
         setUData(response.data);
         console.log(response.data);

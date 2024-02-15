@@ -28,7 +28,7 @@ const ProductDetail = () => {
         // Replace 'your_encrypted_file_name' with the actual encrypted file name
         // const encryptedFileName = 'bdcb467f022461af7193b564c318ce64';
         const productId = '64e2f3490acf179288d7acc2';
-        axios.get(`http://localhost:3155/Admin/viewimage/${id}`, {
+        axios.get(`https://ecommerce-backend-556q.onrender.com/Admin/viewimage/${id}`, {
             responseType: 'arraybuffer',
         })
             .then((response) => {
@@ -48,7 +48,7 @@ const ProductDetail = () => {
       setLoading(true);
       try {
         const response = await axios.post(
-          "http://localhost:3155/Admin/viewProduct",
+          "https://ecommerce-backend-556q.onrender.com/Admin/viewProduct",
           body
         );
         setUData(response.data);
@@ -76,7 +76,7 @@ const ProductDetail = () => {
          }
     try {
         
-        const  response = await axios.post('http://localhost:3155/User/addtocart',body)
+        const  response = await axios.post('https://ecommerce-backend-556q.onrender.com/User/addtocart',body)
         
         console.log(response.data)
         

@@ -17,7 +17,7 @@ const FullProduct = () => {
         const fetchData = async () => {
             setLoading(true);
             try {
-                const response = await axios.post('http://localhost:3155/Admin/viewProduct', body)
+                const response = await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/viewProduct', body)
                 setUData(response.data);
                 console.log(response.data)
 

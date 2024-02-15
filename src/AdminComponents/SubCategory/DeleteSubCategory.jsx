@@ -18,7 +18,7 @@ const DeleteSubCategory = () => {
     const fetchData = async () => {
         setLoading(true);
         try {
-            const  response = await axios.post('http://localhost:3155/Admin/viewSubCategory',body)
+            const  response = await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/viewSubCategory',body)
             setUData(response.data);
             console.log(response.data)
             
@@ -56,7 +56,7 @@ const body = {
 }
 
       try {
-          await axios.post('http://localhost:3155/Admin/deleteSubCategory', body).then(res => {
+          await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/deleteSubCategory', body).then(res => {
 
               if (res.data === "No item found") {
 

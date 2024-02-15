@@ -23,7 +23,7 @@ const ViewCart = () => {
           UserId:UserId
         }
         const response = await axios.post(
-          "http://localhost:3155/User/viewcart",
+          "https://ecommerce-backend-556q.onrender.com/User/viewcart",
           body
         );
         setUData(response.data);

@@ -11,7 +11,7 @@ const DeleteProduct = () => {
         const fetchData = async () => {
             setLoading2(true);
             try {
-                const response = await axios.post('http://localhost:3155/Admin/viewCategory')
+                const response = await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/viewCategory')
                 setUData2(response.data);
                 console.log(response.data)
 
@@ -39,7 +39,7 @@ const DeleteProduct = () => {
         const fetchData = async () => {
             setLoading1(true);
             try {
-                const response = await axios.post('http://localhost:3155/Admin/viewSubCategory')
+                const response = await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/viewSubCategory')
                 setUData1(response.data);
                 console.log(response.data)
 
@@ -81,7 +81,7 @@ const DeleteProduct = () => {
         const fetchData = async () => {
             setLoading(true);
             try {
-                const response = await axios.post('http://localhost:3155/Admin/viewProduct', body)
+                const response = await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/viewProduct', body)
                 setUData(response.data);
                 console.log(response.data)
 
@@ -125,7 +125,7 @@ const DeleteProduct = () => {
         }
 
         try {
-            await axios.post('http://localhost:3155/Admin/deleteProduct', body).then(res => {
+            await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/deleteProduct', body).then(res => {
 
                 if (res.data === " ") {
 

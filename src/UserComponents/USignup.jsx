@@ -22,7 +22,7 @@ export default function USignup() {
 
 
         try {
-            await axios.post('http://localhost:3155/User/Signup', {
+            await axios.post('https://ecommerce-backend-556q.onrender.com/User/Signup', {
                 firstname, lastname, phone, email, password,
             }).then(res => {
 

@@ -22,7 +22,7 @@ const AddSubCategory= () => {
 
 
       try {
-          await axios.post('http://localhost:3155/Admin/addSubCategory', {
+          await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/addSubCategory', {
               SubCategoryName
           }).then(res => {
 

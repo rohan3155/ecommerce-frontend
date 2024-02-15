@@ -15,7 +15,7 @@ const AddProduct = () => {
           const fetchData = async () => {
               setLoading2(true);
               try {
-                  const response = await axios.post('http://localhost:3155/Admin/viewCategory')
+                  const response = await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/viewCategory')
                   setUData2(response.data);
                   console.log(response.data)
   
@@ -43,7 +43,7 @@ const AddProduct = () => {
         const fetchData = async () => {
             setLoading(true);
             try {
-                const response = await axios.post('http://localhost:3155/Admin/viewSubCategory')
+                const response = await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/viewSubCategory')
                 setUData(response.data);
                 console.log(response.data)
 
@@ -80,7 +80,7 @@ const AddProduct = () => {
 
 
       try {
-          await axios.post('http://localhost:3155/Admin/addProduct', {
+          await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/addProduct', {
             ProductName, BrandName, Description, BuyingPrice,SellingPrice, CategoryName,SubCategoryName,
           }).then(res => {
 

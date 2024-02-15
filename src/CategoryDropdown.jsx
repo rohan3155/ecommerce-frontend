@@ -10,7 +10,7 @@ const CategoryDropdown = () => {
         const fetchData = async () => {
             setLoading(true);
             try {
-                const  response = await axios.post('http://localhost:3155/Admin/viewCategory')
+                const  response = await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/viewCategory')
                 setUData(response.data);
                 console.log(response.data)
                 

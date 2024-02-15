@@ -20,7 +20,7 @@ console.log(id)
          
           try {
             const response = await axios.post(
-              "http://localhost:3155/User/removefromcart",
+              "https://ecommerce-backend-556q.onrender.com/User/removefromcart",
               body,
               { headers: { "Content-Type": "application/json" } }
             );

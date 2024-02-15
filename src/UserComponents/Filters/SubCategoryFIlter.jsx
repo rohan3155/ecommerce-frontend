@@ -10,7 +10,7 @@ const SubCategoryFIlter = () => {
         const fetchData = async () => {
             setLoading(true);
             try {
-                const  response = await axios.post('http://localhost:3155/Admin/viewSubCategory')
+                const  response = await axios.post('https://ecommerce-backend-556q.onrender.com/Admin/viewSubCategory')
                 setUData(response.data);
                 console.log(response.data)
                 

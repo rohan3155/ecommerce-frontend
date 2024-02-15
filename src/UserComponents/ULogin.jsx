@@ -24,7 +24,7 @@ export default function ULogin() {
 
 
         try {
-            await axios.post('http://localhost:3155/User/Login', {
+            await axios.post('https://ecommerce-backend-556q.onrender.com/User/Login', {
                  phone,password
             }).then(res => {
 
